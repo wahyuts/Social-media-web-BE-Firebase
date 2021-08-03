@@ -11,7 +11,7 @@ const { signup,signin} = require('./handlers/users')
 app.get('/screams', getAllScream)
 app.post('/screams', FBAuth, postOneScream)
 
-//Sign up Route
+//Sign up Route lll
 
 app.post('/signup', signup)
 
