@@ -4,7 +4,7 @@ const isEmail = (email) => {
     if(email.match(regex)) return true;
     else return false;
   }
-  
+
   // 
   const isEmpty = (string) => {
     if(string.trim() === '') return true;
@@ -43,11 +43,11 @@ const isEmail = (email) => {
   exports.validateSigninData = (data) => {
     let errors = {};
   
-    if(isEmpty(user.email)){
+    if(isEmpty(data.email)){
       errors.email = "email must not be empty"
     }
   
-    if(isEmpty(user.password)){
+    if(isEmpty(data.password)){
       errors.password = "password must not be empty"
     }
   
